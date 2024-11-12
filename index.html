@@ -17,17 +17,66 @@
                 <ul class="hero__content__combos">
                     <li class="hero__content__combos__combo">
                         <img src="./dist/images/logos/manga.jpg" alt="Mangá">
-                        <button>Mangá</button>
-                        <span class="text">Capitulo 39</span>
+                        <span class="text--big">Capitulo 39</span>
                     </li>
                     <li class="hero__content__combos__combo">
                         <img src="./dist/images/logos/episodio.png" alt="Anime">
-                        <button>Anime</button>
-                        <span class="text">T3 E188</span>
+                        <span class="text--big">T3 E188</span>
                     </li>
                 </ul>
             </h1>   
         </div>
     </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="manga" class="shows__tabs__button shows__tabs__button--is-active">
+                Mangá
+            </button>
+            <button data-tab-button="anime" class="shows__tabs__button">
+                Anime
+            </button>
+        </nav>
+        <ul data-tab-id="manga" class="shows__list shows__list--is-active ">
+            <li class="shows__list__item">
+                <img src="./dist/images/manga/manga_shows_1.jpg" alt="Manga cap. 1">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/manga/manga_shows_2.jpg" alt="Manga cap. 2">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/manga/manga_shows_3.jpg" alt="Manga cap. 3">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/manga/manga_shows_4.jpg" alt="Manga cap. 4">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/manga/manga_shows_5.jpg" alt="Manga cap. 5">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/manga/manga_shows_6.jpg" alt="Manga cap. 6">
+            </li>
+        </ul>
+        <ul data-tab-id="anime" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/anime/ep_1.png" alt="Anime ep. 1">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/anime/ep_2.png" alt="Anime ep. 2">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/anime/ep_3.png" alt="Anime ep. 3">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/anime/ep_4.png" alt="Anime ep. 4">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/anime/ep_5.png" alt="Anime ep. 5">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/anime/ep_6.png" alt="Anime ep. 6">
+            </li>
+        </ul>
+    </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>

@@ -9,20 +9,22 @@
     background-position: center; 
 
     &__content {
-        max-width: 360px;
+        max-width: 50%;
 
         &__branding {
-            max-width: 320px;
-            margin: 0 auto 38px;
+            max-width: 100px;
+            margin: 0 auto 96px;
         }
 
         .title--small {
-            margin-bottom: 64px;
+            margin-bottom: 100px;
             text-align: center;
         }
 
-        p {
+        span {
             margin-bottom: 20px;
+            color: variaveis.$cordeFundo;
+            cursor: pointer;
         }
 
         &__combos {
@@ -30,23 +32,11 @@
             justify-content: space-between;
 
             &__combo {
-                width: calc(50% - 12px);
+                width: calc(50% - 65px);
 
                 img {
-                    max-height: 160px;
-                }
-
-                button {
-                    display: block;
-                    width: 100%;
-                    height: 60px;
-                    font-size: 18px;
-                    color: variaveis.$corTextoSecundario;
-                    background-color: variaveis.$cordeFundoBotao;
-                    text-transform: uppercase;
-                    border-radius: 4px;
-                    margin-top: 2vw;
-                    margin-bottom: 8px;
+                    max-height: 260px;
+                    cursor: pointer;
                 }
             }
         }

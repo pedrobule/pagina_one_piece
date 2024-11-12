@@ -1,0 +1,46 @@
+@use 'variaveis';
+
+.shows {
+    padding: 2vw 5.6vw;
+
+    &__list {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        margin-top: 44px;
+        margin-left: 100px;
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        height: 32px;
+
+        &__button {
+            background-color: variaveis.$cordeFundo;
+            color: variaveis.$corTextoPrincipal;
+            border: none;
+            font-size: 20px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            margin: 0 3vw;
+            cursor: pointer;
+            border-bottom: 3px solid variaveis.$cordeFundo;
+            
+            &--is-active {
+                border-bottom: 3px solid variaveis.$cordeFundoBotao;
+            }
+        }
+    }
+}

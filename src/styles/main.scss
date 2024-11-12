@@ -1,14 +1,18 @@
 @use 'hero';
 @use 'variaveis';
+@use 'shows';
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     background-color: variaveis.$cordeFundo;
+    
 }
 
 @mixin text($fontSize: 16px) {
@@ -19,7 +23,7 @@ body {
 
 @mixin title($fontSize: 40px) {
     @include text($fontSize);
-    color: variaveis.$corTextoSecundario;
+    color: variaveis.$corTextoPrincipal;
 }
 
 .text--big {
@@ -36,7 +40,7 @@ body {
 
 .link-text {
     @include text(18px);
-    color: variaveis.$corTextoSecundario;
+    color: variaveis.$cordeFundo;;
     text-decoration: underline;
 }
 
